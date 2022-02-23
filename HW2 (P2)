@@ -1,0 +1,23 @@
+#include <iostream> 
+#include <string>
+
+using namespace std;
+
+string define_sign(int num, string sign)
+{
+	if (num > 0)
+		sign = "positive";
+	else {
+		if (num < 0)
+			sign = "negative";
+		else sign = "zero";
+	}
+	return sign;
+};
+
+int main()
+{
+	int num; string sign;
+	cin >> num;
+	cout << "The number is " << define_sign(num,sign);
+}
