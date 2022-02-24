@@ -1,0 +1,16 @@
+#include <iostream> 
+
+using namespace std;
+int mirror(int a = 0, int obr = 0) {
+	while (a > 0) {
+		obr = a % 10 + obr * 10;
+			a = a / 10;
+	};
+	return obr;
+};
+
+int main() {
+	int a, obr = 0;
+	cin >> a;
+	cout << mirror(a, obr);
+}
