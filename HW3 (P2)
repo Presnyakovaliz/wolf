@@ -9,7 +9,7 @@ string signs(int count, string sign) {
 	else sign = "positive";
 	return sign;
 };
-
+//функция считывает знаки чисел
 int main() {
 	int count;
 	do {
