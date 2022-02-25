@@ -1,0 +1,21 @@
+#include <iostream> 
+#include <string>
+
+using namespace std;
+string num;
+
+string signs(int count, string sign) {
+	if (count != 0) sign = "not positive";
+	else sign = "positive";
+	return sign;
+};
+
+int main() {
+	int count;
+	do {
+		cin >> num;
+		if (num < 0) count++;
+	} while (num != "");
+	string sign;
+	cout << signs(count, sign);
+}
