@@ -1,6 +1,8 @@
 #include <iostream> 
 
 using namespace std;
+
+//ф-я возвращает "перевернутое" число
 int mirror(int a = 0, int obr = 0) {
 	while (a > 0) {
 		obr = a % 10 + obr * 10;
